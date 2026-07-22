@@ -5,13 +5,19 @@
 
 Official reproducibility repository for the paper:
 
-> **Note:** The full training and evaluation code will be released in this repository upon acceptance of the paper.
+> **Note:** The complete implementation code will be released in this repository upon acceptance of the paper.
 ---
 
 ## 1. Overview
 
-This repository implements PML-DDT, a robust label disambiguation framework based on dual dynamic thresholds. It adaptively selects highly reliable positive and negative labels from candidate sets, effectively suppressing noise interference. As training progresses, more increasingly challenging samples are incorporated to enhance the model’s generalization ability through a progressive learning strategy.
+> **PML-DDT**: A robust label disambiguation framework based on dual dynamic thresholds.
+
+&emsp;&emsp;This repository implements **PML-DDT**, a robust label disambiguation framework based on dual dynamic thresholds. It adaptively selects highly reliable positive and negative labels from candidate sets, effectively suppressing noise interference. 
+
+&emsp;&emsp;As training progresses, increasingly challenging samples are incorporated to enhance the model’s generalization ability through a progressive learning strategy.
+
 ---
+
 
 
 
