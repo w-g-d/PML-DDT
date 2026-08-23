@@ -1,11 +1,11 @@
-
-
-
 # PML-DDT: Dual Dynamic Thresholds for Partial Multi-label Learning
 
-Official reproducibility repository for the paper:
+PyTorch implementation of PML-DDT
 
-> **Note:** The complete implementation code will be released in this repository upon acceptance of the paper.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?logo=pytorch&logoColor=white)
+![Datasets](https://img.shields.io/badge/Datasets-VOC2007%20%7C%20COCO2014%20%7C%20NUS--WIDE-orange)
+
 ---
 
 ## 1. Overview
@@ -60,8 +60,64 @@ The thresholds follow the **linear schedule** of Eqs. (12)–(13): starting from
 ---
 
 
-## 3. Contact
+
+
+## 3. Dataset Structure
+
+<details>
+<summary><b>VOC2007</b></summary>
+
+```
+<data-path>/VOC/
+├── VOCtest_06-Nov-2007/
+│   └── VOCdevkit/
+│       └── VOC2007/
+│           ├── Annotations/
+│           ├── ImageSets/
+│           ├── JPEGImages/
+│           ├── SegmentationClass/
+│           └── SegmentationObject/
+└── VOCtrainval_06-Nov-2007/
+    └── VOCdevkit/
+        └── VOC2007/
+            └── ... (same structure)
+```
+</details>
+
+<details>
+<summary><b>MS-COCO 2014</b></summary>
+
+```
+<data-path>/COCO/
+├── train2014/
+│   └── COCO_train2014_xxx.jpg
+└── val2014/
+    └── COCO_val2014_xxx.jpg
+```
+
+The annotation files (`train_anno.json`, `val_anno.json`) are already provided in [`dataset/coco/`](dataset/coco/).
+</details>
+
+<details>
+<summary><b>NUS-WIDE</b></summary>
+
+```
+<data-path>/NUSWIDE/
+├── ImageList/
+│   ├── TrainImagelist.txt
+│   └── TestImagelist.txt
+├── Groundtruth/
+│   ├── TrainTestLabels/
+│   │   ├── Labels_airport_Test.txt
+│   │   └── ...
+│   └── AllLabels/
+└── Flickr/
+    └── <category>/<image>.jpg
+```
+</details>
+
+
+## 4. Contact
 
 For questions, please open an issue or contact: `jkguo0508@163.com`.
 
-```
